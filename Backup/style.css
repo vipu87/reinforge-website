@@ -1,0 +1,526 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:#2E3135;
+    background:#FFFFFF;
+    overflow-x:hidden;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar{
+    height:120px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 3%;
+    border-bottom:1px solid #ECECEC;
+    background:#FFFFFF;
+}
+
+.logo{
+    flex-shrink:0;
+}
+
+.logo img{
+    height:120px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:70px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#2E3135;
+    font-size:20px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#F07A22;
+}
+
+.nav-btn,
+.primary-btn{
+    background:#F07A22;
+    color:#FFFFFF;
+    padding:18px 34px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    display:inline-block;
+    transition:.3s;
+}
+
+.nav-btn:hover,
+.primary-btn:hover{
+    opacity:.9;
+}
+
+.secondary-btn{
+    border:1px solid #D0D5DD;
+    color:#2E3135;
+    padding:18px 34px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    display:inline-block;
+    transition:.3s;
+}
+
+.secondary-btn:hover{
+    background:#F8F9FA;
+}
+
+/* =========================
+COMMON
+========================= */
+
+.container{
+    max-width:1320px;
+    margin:0 auto;
+}
+
+.eyebrow{
+    color:#F07A22;
+    text-transform:uppercase;
+    font-size:14px;
+    letter-spacing:2px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.center{
+    text-align:center;
+}
+
+h2{
+    font-size:52px;
+    line-height:1.1;
+    letter-spacing:-2px;
+    margin-bottom:22px;
+}
+
+.section-intro{
+    max-width:900px;
+    margin:0 auto;
+    color:#667085;
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+    min-height:85vh;
+    display:grid;
+    grid-template-columns:48% 52%;
+    align-items:center;
+    gap:40px;
+    padding:60px 3%;
+}
+
+.hero-left{
+    max-width:760px;
+}
+
+.hero-left h1{
+    font-size:86px;
+    line-height:.92;
+    letter-spacing:-5px;
+    margin-bottom:30px;
+}
+
+.hero-copy{
+    color:#667085;
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:16px;
+    margin-bottom:30px;
+}
+
+.hero-note{
+    color:#667085;
+    font-size:16px;
+    font-weight:600;
+}
+
+.hero-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-right img{
+    width:115%;
+    max-width:1100px;
+    height:auto;
+    display:block;
+}
+
+/* =========================
+ECOSYSTEM
+========================= */
+
+.ecosystem-section{
+    padding:140px 5%;
+    background:#FFFFFF;
+    text-align:center;
+}
+
+.ecosystem-section h2{
+    max-width:950px;
+    margin:0 auto 22px;
+}
+
+.ecosystem-image{
+    margin-top:60px;
+}
+
+.ecosystem-image img{
+    width:100%;
+    max-width:1500px;
+    display:block;
+    margin:auto;
+}
+
+/* =========================
+CAPABILITIES
+========================= */
+
+.capabilities{
+    padding:120px 8%;
+    text-align:center;
+}
+
+.capability-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-top:70px;
+    text-align:left;
+}
+
+.capability-card{
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:20px;
+    padding:34px;
+    transition:.25s;
+}
+
+.capability-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 35px rgba(16,24,40,.08);
+}
+
+.capability-card span{
+    color:#F07A22;
+    font-size:14px;
+    font-weight:900;
+}
+
+.capability-card h3{
+    margin:16px 0 12px;
+    font-size:24px;
+}
+
+.capability-card p{
+    color:#667085;
+    line-height:1.75;
+}
+
+/* =========================
+INDUSTRIES
+========================= */
+
+.industries-home{
+    padding:120px 8%;
+    background:#FFFFFF;
+    text-align:center;
+}
+
+.industry-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+    margin-top:70px;
+}
+
+.industry-card{
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:20px;
+    padding:35px;
+    text-align:left;
+    transition:.25s;
+}
+
+.industry-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 35px rgba(16,24,40,.08);
+}
+
+.industry-card h3{
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+.industry-card p{
+    color:#667085;
+    line-height:1.75;
+}
+
+/* =========================
+WHY
+========================= */
+
+.why{
+    padding:120px 8%;
+    background:#F7F8FA;
+    text-align:center;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-top:70px;
+    text-align:left;
+}
+
+.why-card{
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:20px;
+    padding:34px;
+}
+
+.why-card h3{
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+.why-card p{
+    color:#667085;
+    line-height:1.75;
+}
+
+/* =========================
+THINKING
+========================= */
+
+.thinking{
+    padding:120px 8%;
+    text-align:center;
+}
+
+.thinking-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-top:70px;
+    text-align:left;
+}
+
+.thinking-card{
+    min-height:260px;
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:20px;
+    padding:34px;
+}
+
+.thinking-card p{
+    color:#F07A22;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:800;
+}
+
+.thinking-card h3{
+    font-size:28px;
+    line-height:1.25;
+    margin:18px 0 38px;
+}
+
+.thinking-card a{
+    text-decoration:none;
+    color:#2E3135;
+    font-weight:800;
+}
+
+/* =========================
+CTA
+========================= */
+
+.final-cta{
+    padding:120px 8%;
+    background:#2E3135;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+.cta-inner p{
+    color:#D0D5DD;
+    font-size:20px;
+    margin:20px 0 34px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer{
+    padding:42px 8%;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    border-top:1px solid #ECECEC;
+}
+
+.footer p{
+    color:#667085;
+    margin-top:8px;
+}
+
+.footer-links a{
+    display:inline-block;
+    margin-left:22px;
+    color:#2E3135;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width:1200px){
+
+    .hero-left h1{
+        font-size:72px;
+    }
+
+    .hero-right img{
+        width:100%;
+    }
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width:980px){
+
+    .navbar{
+        height:auto;
+        padding:20px 5%;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .logo img{
+        height:90px;
+    }
+
+    .hero{
+    min-height:85vh;
+    display:grid;
+    grid-template-columns:55% 45%;
+    align-items:center;
+    gap:60px;
+    padding:60px 4%;
+}
+
+    .hero-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    .hero-left{
+        order:2;
+    }
+
+    .hero-left h1{
+    font-size:72px;
+    line-height:.95;
+    letter-spacing:-3px;
+    max-width:800px;
+    margin-bottom:30px;
+
+    }
+
+    .hero-copy{
+        font-size:20px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+   .hero-right img{
+    width:115%;
+    max-width:900px;
+    height:auto;
+    display:block;
+}
+
+    .capability-grid,
+    .industry-grid,
+    .why-grid,
+    .thinking-grid{
+        grid-template-columns:1fr;
+    }
+
+    h2{
+        font-size:38px;
+    }
+
+    .section-intro{
+        font-size:18px;
+    }
+
+    .ecosystem-section,
+    .capabilities,
+    .industries-home,
+    .why,
+    .thinking,
+    .final-cta{
+        padding:80px 5%;
+    }
+
+    .footer{
+        flex-direction:column;
+    }
+
+    .footer-links a{
+        margin:12px 18px 0 0;
+    }
+}
